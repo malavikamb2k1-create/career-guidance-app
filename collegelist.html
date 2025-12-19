@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="home-title">Available Colleges</h2>
+
+<form method="get">
+    <input type="text" name="location" placeholder="Search by Location">
+    <button style="margin-top: 0;">Search</button>
+</form>
+
+<br>
+
+{% for college in colleges %}
+    <div class="college-card">
+        <h3>{{ college.name }}</h3>
+        <p><strong>Location:</strong> {{ college.location }}</p>
+        <p><strong>Tuition Fee:</strong> ₹{{ college.tuition_fee }}</p>
+        <p><strong>Housing Fee:</strong> ₹{{ college.housing_fee }}</p>
+        <p><strong>Eligibility:</strong> {{ college.eligibility }}</p>
+    </div>
+{% endfor %}
+
+{% endblock %}

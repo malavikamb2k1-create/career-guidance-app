@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Career<span>Guide</span></div>
+        <nav>
+            <a href="/">Home</a>
+
+            {% if user.is_authenticated %}
+                <a href="/colleges/">Colleges</a>
+                <a href="/aptitude-test/">Aptitude Test</a>
+                <a class="btn-logout" href="/logout/">Logout</a>
+            {% else %}
+                <a href="/login/">Login</a>
+                <a class="btn-primary" href="/signup/">Sign Up</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
