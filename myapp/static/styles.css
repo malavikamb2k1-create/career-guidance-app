@@ -1,1 +1,129 @@
 
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f2f6ff;
+}
+
+/* Navbar */
+.navbar {
+    background: #0a3d62;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #4cd137;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #4cd137;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-logout {
+    background: #e84141;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Page Container */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* Home Title */
+.home-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    color: #0a3d62;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-top: -10px;
+    color: #555;
+}
+
+/* Form */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0a3d62;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* College Cards */
+.college-card {
+    background: #e3f0ff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border-left: 6px solid #0a3d62;
+    transition: 0.3s;
+}
+
+.college-card:hover {
+    transform: scale(1.02);
+}
+
+/* Aptitude Questions */
+.question-block {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border-left: 6px solid #ffcd39;
+}
+
