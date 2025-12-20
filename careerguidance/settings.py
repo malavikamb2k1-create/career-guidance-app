@@ -19,11 +19,11 @@ SECRET_KEY = os.environ.get(
     "django-insecure-temp-key"
 )
 
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    "career-guidance-app-8.onrender.com",
+    "career-guidance-app-9.onrender.com",
     ".onrender.com",
     "localhost",
     "127.0.0.1",
@@ -31,7 +31,7 @@ ALLOWED_HOSTS = [
 
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://career-guidance-app-8.onrender.com",
+    "https://career-guidance-app-9.onrender.com",
 ]
 
 
