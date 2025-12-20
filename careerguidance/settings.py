@@ -23,7 +23,7 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    "career-guidance-app-4.onrender.com",
+    "career-guidance-app-5.onrender.com",
     ".onrender.com",
     "localhost",
     "127.0.0.1",
