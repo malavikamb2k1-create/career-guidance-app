@@ -1,5 +1,6 @@
 """
 Django settings for careerguidance project.
+Updated for PythonAnywhere deployment.
 """
 
 from pathlib import Path
@@ -19,19 +20,19 @@ SECRET_KEY = os.environ.get(
     "django-insecure-temp-key"
 )
 
+# Set to False for production!
 DEBUG = False
 
-
+# UPDATED FOR MALAVIKAMB'S PYTHONANYWHERE
 ALLOWED_HOSTS = [
-    "career-guidance-app-9.onrender.com",
-    ".onrender.com",
+    "malavikamb.pythonanywhere.com",
     "localhost",
     "127.0.0.1",
 ]
 
-
+# UPDATED FOR SECURITY
 CSRF_TRUSTED_ORIGINS = [
-    "https://career-guidance-app-9.onrender.com",
+    "https://malavikamb.pythonanywhere.com",
 ]
 
 
@@ -52,7 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', # Keep this, it helps with static files
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -91,7 +92,7 @@ WSGI_APPLICATION = 'careerguidance.wsgi.application'
 
 
 # --------------------------------------------------
-# Database (SQLite for now)
+# Database (SQLite)
 # --------------------------------------------------
 DATABASES = {
     'default': {
@@ -125,11 +126,12 @@ USE_TZ = True
 
 
 # --------------------------------------------------
-# Static files
+# Static files (UPDATED FOR PYTHONANYWHERE)
 # --------------------------------------------------
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+# Change this from 'staticfiles' to 'static' for standard PythonAnywhere setup
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
